@@ -2,17 +2,18 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform targetTransform;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Transform target_transform;
+	public Transform camera_object;
+
+    void
+	Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void
+	Update()
     {
-        transform.LookAt(targetTransform);
-        //Mathf.Sin(); Mathf.Cos();
+        camera_object.transform.LookAt(target_transform);
     }
 }
